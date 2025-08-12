@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>VOID/99 — SS25 “SYSTEM ERROR”</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- Lottie -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body data-theme="dark">
+
+  <!-- THEME TOGGLE -->
+  <button id="theme-toggle" aria-label="Toggle theme">◐</button>
+
+  <!-- CURSOR -->
+  <div id="cursor"></div>
+
+  <!-- LOADER -->
+  <!-- <div id="loader"><lottie-player src="https://assets2.lottiefiles.com/packages/lf20_usmfx6bp.json" background="transparent" speed="1" style="width:120px;height:120px" loop autoplay></lottie-player></div> -->
+
+  <!-- HEADER -->
+  <header>
+    <h1 class="logo">VOID/99</h1>
+    <nav>
+      <button id="menu-toggle">MENU</button>
+      <ul id="menu">
+        <li><a href="#shop">SHOP</a></li>
+        <li><a href="#archive">ARCHIVE</a></li>
+        <li><a href="#about">ABOUT</a></li>
+      </ul>
+    </nav>
+    <span id="bag-btn">BAG <b id="bag-count">0</b></span>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero">
+    <h2 class="glitch" data-text="SYSTEM ERROR">SYSTEM ERROR</h2>
+    <button class="cta">ENTER</button>
+  </section>
+
+  <!-- SHOP -->
+  <section id="shop">
+    <div class="grid" id="product-grid"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p>VOID/99 is a non-brand. We produce anti-garments for post-human conditions.</p>
+  </section>
+
+  <!-- BAG MODAL -->
+  <div id="bag-modal">
+    <div class="modal-inner">
+      <button class="close">✕</button>
+      <h3>BAG</h3>
+      <ul id="bag-list"></ul>
+      <button class="ghost">CHECKOUT (demo)</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
